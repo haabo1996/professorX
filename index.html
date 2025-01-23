@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROFESSOR-X</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+  <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-color: #002b5c;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 18px;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Section Titles */
+    h2 {
+      font-size: 28px;
+      color: #002b5c;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 60px;
+      height: 3px;
+      background-color: #ffd700;
+    }
+
+    /* Section Styling */
+    .section {
+      margin-bottom: 40px;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    p {
+      line-height: 1.6;
+    }
+
+    /* Card and List Styles */
+    .card {
+      background-color: #f4f6f9;
+      padding: 20px;
+      border-left: 4px solid #ffd700;
+      border-radius: 5px;
+      color: #333;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.3s ease;
+    }
+    .card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #002b5c;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 0 10px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .skills, .experience {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Stoihkov Waldy Haabo</h1>
+  <p>Software Engineer | Developer | Problem Solver</p>
+</header>
+
+<div class="container">
+  <!-- Personal Information Section -->
+  <section class="section">
+    <h2>Persoonlijke Gegevens</h2>
+    <p><strong>Naam:</strong> Stoihkov Waldy Haabo</p>
+    <p><strong>Adres:</strong> De Goede Zorgweg 380</p>
+    <p><strong>Geboortedatum:</strong> 2 maart 1996</p>
+    <p><strong>Telefoon:</strong> 5977403009</p>
+    <p><strong>E-mail:</strong> <a href="mailto:s.haabo@unasat.sr" style="color: #002b5c;">s.haabo@unasat.sr</a></p>
+  </section>
+
+  <!-- Motivation Section -->
+  <section class="section">
+    <h2>Motivatie</h2>
+    <p>Ik ben een gedreven professional en tweedejaars student System Network Engineering aan UNASAT, met een sterke passie voor technologie en het oplossen van complexe problemen. Mijn doel is om mijn vaardigheden in softwareontwikkeling en netwerken in te zetten voor het creëren van innovatieve oplossingen die efficiëntie verhogen en de gebruikerservaring verbeteren. Hierbij ben ik leergierig, streef ik naar kwaliteit en blijf ik mijn kennis verbreden. Zo wil ik niet alleen mijn carrière continu laten groeien, maar ook bijdragen aan uitdagende projecten die een positieve impact hebben..</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills">
+    <h2>Vaardigheden</h2>
+    <ul>
+      <li>Linux - Basis</li>
+      <li>HTML, CSS - Gevorderd</li>
+      <li>JavaScript, C++, Java - Gevorderd</li>
+    </ul>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section experience">
+    <h2>Werkervaring</h2>
+    <div class="card">
+      <h3>Customer Experience Officer - Yource</h3>
+      <p><strong>Periode:</strong> 12 mei 2024 - Heden</p>
+    </div>
+    <div class="card">
+      <h3>Verkoper en magazijnmedewerker - Hongxing Trading</h3>
+      <p><strong>Periode:</strong> Juni 2012 - 2020</p>
+    </div>
+    <div class="card">
+      <h3>Allrounder - Surbeef</h3>
+      <p><strong>Periode:</strong> November 2020 - Juni 2022</p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2024 Stoihkov Waldy Haabo. Alle rechten voorbehouden.</p>
+  <p>
+    <a href="https://www.linkedin.com/in/jouwnaam" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/jouwnaam" target="_blank">GitHub</a>
+  </p>
+</footer>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+  
+  // Smooth fade-in for sections
+  gsap.utils.toArray(".section").forEach((section) => {
+    gsap.fromTo(section, { opacity: 0, y: 50 }, {
+      opacity: 1, y: 0, duration: 1, 
+      scrollTrigger: {
+        trigger: section, start: "top 80%", end: "bottom 60%", 
+        toggleActions: "play none none reverse"
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
